@@ -1,0 +1,69 @@
++] Cargando archivo: adatqueDHCP.pcapng
+[+] Paquetes cargados: 1526
+[+] Análisis básico completado.
+
+=== RESUMEN BÁSICO ===
+Archivo: adatqueDHCP.pcapng
+Total de paquetes: 1526
+Ventana temporal: 2025-10-01 14:48:40.177772  ->  2025-10-01 14:49:05.082340  (duración ~24.9 s)
+
+>>> Volumen por protocolo de transporte:
+  - UDP: 1256 paquetes (82.3%)
+  - non-ip: 267 paquetes (17.5%)
+  - other-ip-proto: 3 paquetes (0.2%)
+
+>>> Volumen por tipo de aplicación (aprox. por puerto):
+  - UDP_other: 1255 paquetes (82.2%)
+  - DNS: 1 paquetes (0.1%)
+
+>>> Top 10 IP origen:
+  - 0.0.0.0: 1001 paquetes enviados
+  - 192.168.1.1: 249 paquetes enviados
+  - fe80::e93e:7cd9:f425:5f0a: 6 paquetes enviados
+  - 192.168.1.13: 2 paquetes enviados
+  - 192.168.1.12: 1 paquetes enviados
+
+>>> Top 10 IP destino:
+  - 255.255.255.255: 1003 paquetes recibidos
+  - ff02::16: 3 paquetes recibidos
+  - ff02::1:3: 2 paquetes recibidos
+  - 192.168.1.38: 1 paquetes recibidos
+  - 192.168.1.39: 1 paquetes recibidos
+  - 192.168.1.40: 1 paquetes recibidos
+  - 192.168.1.41: 1 paquetes recibidos
+  - 192.168.1.43: 1 paquetes recibidos
+  - 192.168.1.42: 1 paquetes recibidos
+  - 192.168.1.44: 1 paquetes recibidos
+
+>>> Top 10 puertos destino:
+  - 67: 1003 paquetes
+  - 68: 249 paquetes
+  - 5355: 2 paquetes
+  - 138: 1 paquetes
+  - 5353: 1 paquetes
+
+>>> Top 10 dominios DNS consultados:
+
+>>> Serie de tiempo (paquetes por intervalo):
+  - 2025-10-01 14:48:40 : 4 paquetes
+  - 2025-10-01 14:48:45 : 609 paquetes
+  - 2025-10-01 14:48:50 : 899 paquetes
+  - 2025-10-01 14:48:55 : 2 paquetes
+  - 2025-10-01 14:49:00 : 11 paquetes
+  - 2025-10-01 14:49:05 : 1 paquetes
+
+=== POSIBLES IOCs / HALLAZGOS ANÓMALOS ===
+
+>>> No se detectaron patrones claros de SYN flood con el umbral configurado.
+
+>>> No se detectaron scans claros de puertos con el umbral configurado.
+
+>>> No se detectaron puertos inusuales con mucho tráfico.
+
+>>> No se detectaron dominios DNS obviamente sospechosos según la heurística simple.
+
+>>> No se observaron pares con RST anormalmente altos (según el umbral).
+
+>>> No se observaron muchos ICMP unreachable (según el umbral).
+
+[+] Análisis finalizado.

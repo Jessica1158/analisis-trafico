@@ -1,0 +1,177 @@
+[+] Cargando archivo: DDOS_victima.pcapng
+[+] Paquetes cargados: 14859
+[+] Análisis básico completado.
+
+=== RESUMEN BÁSICO ===
+Archivo: DDOS_victima.pcapng
+Total de paquetes: 14859
+Ventana temporal: 2025-10-01 15:03:00.965364  ->  2025-10-01 15:04:21.162933  (duración ~80.2 s)
+
+>>> Volumen por protocolo de transporte:
+  - TCP: 11189 paquetes (75.3%)
+  - non-ip: 3544 paquetes (23.9%)
+  - UDP: 68 paquetes (0.5%)
+  - other-ip-proto: 45 paquetes (0.3%)
+  - ICMP: 13 paquetes (0.1%)
+
+>>> Volumen por tipo de aplicación (aprox. por puerto):
+  - HTTP: 11071 paquetes (74.5%)
+  - TCP_other: 118 paquetes (0.8%)
+  - UDP_other: 47 paquetes (0.3%)
+  - DNS: 21 paquetes (0.1%)
+
+>>> Top 10 IP origen:
+  - 192.168.1.196: 285 paquetes enviados
+  - 192.168.1.197: 234 paquetes enviados
+  - 192.168.1.124: 134 paquetes enviados
+  - 192.168.1.119: 131 paquetes enviados
+  - 192.168.1.118: 131 paquetes enviados
+  - 192.168.1.115: 129 paquetes enviados
+  - 192.168.1.149: 129 paquetes enviados
+  - 192.168.1.164: 127 paquetes enviados
+  - 192.168.1.158: 126 paquetes enviados
+  - 192.168.1.150: 126 paquetes enviados
+
+>>> Top 10 IP destino:
+  - 192.168.1.196: 11084 paquetes recibidos
+  - 192.168.1.197: 114 paquetes recibidos
+  - ff02::16: 30 paquetes recibidos
+  - 8.8.8.8: 25 paquetes recibidos
+  - 224.0.0.22: 15 paquetes recibidos
+  - ff02::1:3: 12 paquetes recibidos
+  - 224.0.0.252: 12 paquetes recibidos
+  - 23.64.121.56: 10 paquetes recibidos
+  - 192.168.1.14: 7 paquetes recibidos
+  - 192.168.1.1: 3 paquetes recibidos
+
+>>> Top 10 puertos destino:
+  - 80: 11071 paquetes
+  - 53: 25 paquetes
+  - 5355: 24 paquetes
+  - 16990: 14 paquetes
+  - 68: 6 paquetes
+  - 67: 3 paquetes
+  - 11550: 2 paquetes
+  - 9237: 1 paquetes
+  - 36231: 1 paquetes
+  - 61874: 1 paquetes
+
+>>> Top 10 dominios DNS consultados:
+
+>>> Serie de tiempo (paquetes por intervalo):
+  - 2025-10-01 15:03:00 : 5 paquetes
+  - 2025-10-01 15:03:05 : 3969 paquetes
+  - 2025-10-01 15:03:10 : 4730 paquetes
+  - 2025-10-01 15:03:15 : 3913 paquetes
+  - 2025-10-01 15:03:20 : 503 paquetes
+  - 2025-10-01 15:03:25 : 505 paquetes
+  - 2025-10-01 15:03:30 : 501 paquetes
+  - 2025-10-01 15:03:35 : 514 paquetes
+  - 2025-10-01 15:03:40 : 122 paquetes
+  - 2025-10-01 15:03:45 : 4 paquetes
+
+=== POSIBLES IOCs / HALLAZGOS ANÓMALOS ===
+
+>>> Posibles SYN flood:
+  - 192.168.1.111 -> 192.168.1.196:80 | SYN=106 SYN-ACK=0 ratio=0.00
+  - 192.168.1.159 -> 192.168.1.196:80 | SYN=123 SYN-ACK=0 ratio=0.00
+  - 192.168.1.179 -> 192.168.1.196:80 | SYN=104 SYN-ACK=0 ratio=0.00
+  - 192.168.1.163 -> 192.168.1.196:80 | SYN=110 SYN-ACK=0 ratio=0.00
+  - 192.168.1.158 -> 192.168.1.196:80 | SYN=126 SYN-ACK=0 ratio=0.00
+  - 192.168.1.168 -> 192.168.1.196:80 | SYN=119 SYN-ACK=0 ratio=0.00
+  - 192.168.1.152 -> 192.168.1.196:80 | SYN=109 SYN-ACK=0 ratio=0.00
+  - 192.168.1.190 -> 192.168.1.196:80 | SYN=110 SYN-ACK=0 ratio=0.00
+  - 192.168.1.148 -> 192.168.1.196:80 | SYN=113 SYN-ACK=0 ratio=0.00
+  - 192.168.1.183 -> 192.168.1.196:80 | SYN=108 SYN-ACK=0 ratio=0.00
+  - 192.168.1.193 -> 192.168.1.196:80 | SYN=100 SYN-ACK=0 ratio=0.00
+  - 192.168.1.107 -> 192.168.1.196:80 | SYN=105 SYN-ACK=0 ratio=0.00
+  - 192.168.1.155 -> 192.168.1.196:80 | SYN=125 SYN-ACK=0 ratio=0.00
+  - 192.168.1.192 -> 192.168.1.196:80 | SYN=103 SYN-ACK=0 ratio=0.00
+  - 192.168.1.116 -> 192.168.1.196:80 | SYN=103 SYN-ACK=0 ratio=0.00
+  - 192.168.1.144 -> 192.168.1.196:80 | SYN=105 SYN-ACK=0 ratio=0.00
+  - 192.168.1.199 -> 192.168.1.196:80 | SYN=110 SYN-ACK=0 ratio=0.00
+  - 192.168.1.119 -> 192.168.1.196:80 | SYN=131 SYN-ACK=0 ratio=0.00
+  - 192.168.1.126 -> 192.168.1.196:80 | SYN=105 SYN-ACK=0 ratio=0.00
+  - 192.168.1.136 -> 192.168.1.196:80 | SYN=108 SYN-ACK=0 ratio=0.00
+  - 192.168.1.114 -> 192.168.1.196:80 | SYN=107 SYN-ACK=0 ratio=0.00
+  - 192.168.1.131 -> 192.168.1.196:80 | SYN=119 SYN-ACK=0 ratio=0.00
+  - 192.168.1.172 -> 192.168.1.196:80 | SYN=114 SYN-ACK=0 ratio=0.00
+  - 192.168.1.176 -> 192.168.1.196:80 | SYN=100 SYN-ACK=0 ratio=0.00
+  - 192.168.1.177 -> 192.168.1.196:80 | SYN=113 SYN-ACK=0 ratio=0.00
+  - 192.168.1.181 -> 192.168.1.196:80 | SYN=101 SYN-ACK=0 ratio=0.00
+  - 192.168.1.141 -> 192.168.1.196:80 | SYN=114 SYN-ACK=0 ratio=0.00
+  - 192.168.1.180 -> 192.168.1.196:80 | SYN=102 SYN-ACK=0 ratio=0.00
+  - 192.168.1.117 -> 192.168.1.196:80 | SYN=109 SYN-ACK=0 ratio=0.00
+  - 192.168.1.106 -> 192.168.1.196:80 | SYN=112 SYN-ACK=0 ratio=0.00
+  - 192.168.1.115 -> 192.168.1.196:80 | SYN=129 SYN-ACK=0 ratio=0.00
+  - 192.168.1.196 -> 192.168.1.196:80 | SYN=105 SYN-ACK=0 ratio=0.00
+  - 192.168.1.167 -> 192.168.1.196:80 | SYN=114 SYN-ACK=0 ratio=0.00
+  - 192.168.1.140 -> 192.168.1.196:80 | SYN=104 SYN-ACK=0 ratio=0.00
+  - 192.168.1.149 -> 192.168.1.196:80 | SYN=129 SYN-ACK=0 ratio=0.00
+  - 192.168.1.185 -> 192.168.1.196:80 | SYN=107 SYN-ACK=0 ratio=0.00
+  - 192.168.1.200 -> 192.168.1.196:80 | SYN=105 SYN-ACK=0 ratio=0.00
+  - 192.168.1.175 -> 192.168.1.196:80 | SYN=101 SYN-ACK=0 ratio=0.00
+  - 192.168.1.171 -> 192.168.1.196:80 | SYN=110 SYN-ACK=0 ratio=0.00
+  - 192.168.1.153 -> 192.168.1.196:80 | SYN=105 SYN-ACK=0 ratio=0.00
+  - 192.168.1.124 -> 192.168.1.196:80 | SYN=134 SYN-ACK=0 ratio=0.00
+  - 192.168.1.122 -> 192.168.1.196:80 | SYN=111 SYN-ACK=0 ratio=0.00
+  - 192.168.1.189 -> 192.168.1.196:80 | SYN=119 SYN-ACK=0 ratio=0.00
+  - 192.168.1.188 -> 192.168.1.196:80 | SYN=106 SYN-ACK=0 ratio=0.00
+  - 192.168.1.151 -> 192.168.1.196:80 | SYN=107 SYN-ACK=0 ratio=0.00
+  - 192.168.1.170 -> 192.168.1.196:80 | SYN=101 SYN-ACK=0 ratio=0.00
+  - 192.168.1.105 -> 192.168.1.196:80 | SYN=106 SYN-ACK=0 ratio=0.00
+  - 192.168.1.173 -> 192.168.1.196:80 | SYN=107 SYN-ACK=0 ratio=0.00
+  - 192.168.1.109 -> 192.168.1.196:80 | SYN=109 SYN-ACK=0 ratio=0.00
+  - 192.168.1.162 -> 192.168.1.196:80 | SYN=107 SYN-ACK=0 ratio=0.00
+  - 192.168.1.125 -> 192.168.1.196:80 | SYN=107 SYN-ACK=0 ratio=0.00
+  - 192.168.1.197 -> 192.168.1.196:80 | SYN=114 SYN-ACK=114 ratio=1.00
+  - 192.168.1.166 -> 192.168.1.196:80 | SYN=101 SYN-ACK=0 ratio=0.00
+  - 192.168.1.182 -> 192.168.1.196:80 | SYN=108 SYN-ACK=0 ratio=0.00
+  - 192.168.1.165 -> 192.168.1.196:80 | SYN=109 SYN-ACK=0 ratio=0.00
+  - 192.168.1.184 -> 192.168.1.196:80 | SYN=109 SYN-ACK=0 ratio=0.00
+  - 192.168.1.132 -> 192.168.1.196:80 | SYN=108 SYN-ACK=0 ratio=0.00
+  - 192.168.1.150 -> 192.168.1.196:80 | SYN=126 SYN-ACK=0 ratio=0.00
+  - 192.168.1.123 -> 192.168.1.196:80 | SYN=106 SYN-ACK=0 ratio=0.00
+  - 192.168.1.191 -> 192.168.1.196:80 | SYN=105 SYN-ACK=0 ratio=0.00
+  - 192.168.1.102 -> 192.168.1.196:80 | SYN=105 SYN-ACK=0 ratio=0.00
+  - 192.168.1.135 -> 192.168.1.196:80 | SYN=105 SYN-ACK=0 ratio=0.00
+  - 192.168.1.121 -> 192.168.1.196:80 | SYN=114 SYN-ACK=0 ratio=0.00
+  - 192.168.1.113 -> 192.168.1.196:80 | SYN=112 SYN-ACK=0 ratio=0.00
+  - 192.168.1.138 -> 192.168.1.196:80 | SYN=110 SYN-ACK=0 ratio=0.00
+  - 192.168.1.169 -> 192.168.1.196:80 | SYN=106 SYN-ACK=0 ratio=0.00
+  - 192.168.1.120 -> 192.168.1.196:80 | SYN=123 SYN-ACK=0 ratio=0.00
+  - 192.168.1.134 -> 192.168.1.196:80 | SYN=100 SYN-ACK=0 ratio=0.00
+  - 192.168.1.146 -> 192.168.1.196:80 | SYN=105 SYN-ACK=0 ratio=0.00
+  - 192.168.1.143 -> 192.168.1.196:80 | SYN=114 SYN-ACK=0 ratio=0.00
+  - 192.168.1.103 -> 192.168.1.196:80 | SYN=123 SYN-ACK=0 ratio=0.00
+  - 192.168.1.186 -> 192.168.1.196:80 | SYN=125 SYN-ACK=0 ratio=0.00
+  - 192.168.1.164 -> 192.168.1.196:80 | SYN=127 SYN-ACK=0 ratio=0.00
+  - 192.168.1.160 -> 192.168.1.196:80 | SYN=102 SYN-ACK=0 ratio=0.00
+  - 192.168.1.178 -> 192.168.1.196:80 | SYN=115 SYN-ACK=0 ratio=0.00
+  - 192.168.1.194 -> 192.168.1.196:80 | SYN=106 SYN-ACK=0 ratio=0.00
+  - 192.168.1.137 -> 192.168.1.196:80 | SYN=113 SYN-ACK=0 ratio=0.00
+  - 192.168.1.100 -> 192.168.1.196:80 | SYN=113 SYN-ACK=0 ratio=0.00
+  - 192.168.1.198 -> 192.168.1.196:80 | SYN=121 SYN-ACK=0 ratio=0.00
+  - 192.168.1.104 -> 192.168.1.196:80 | SYN=124 SYN-ACK=0 ratio=0.00
+  - 192.168.1.187 -> 192.168.1.196:80 | SYN=115 SYN-ACK=0 ratio=0.00
+  - 192.168.1.154 -> 192.168.1.196:80 | SYN=105 SYN-ACK=0 ratio=0.00
+  - 192.168.1.108 -> 192.168.1.196:80 | SYN=106 SYN-ACK=0 ratio=0.00
+  - 192.168.1.118 -> 192.168.1.196:80 | SYN=131 SYN-ACK=0 ratio=0.00
+  - 192.168.1.157 -> 192.168.1.196:80 | SYN=105 SYN-ACK=0 ratio=0.00
+
+>>> Posibles scans de puertos:
+  - 192.168.1.196 -> 192.168.1.197 | puertos únicos=113
+
+>>> Puertos destino inusuales con alto volumen:
+  - Puerto 5355 : 24 paquetes
+  - Puerto 16990 : 14 paquetes
+
+>>> No se detectaron dominios DNS obviamente sospechosos según la heurística simple.
+
+>>> Pares con muchos paquetes TCP RST (conexiones fallidas):
+  - 192.168.1.197 -> 192.168.1.196 | RST=114
+
+>>> Pares con muchos ICMP unreachable (hosts/puertos no alcanzables):
+  - 192.168.1.1 -> 192.168.1.196 | unreachable=13
+
+[+] Análisis finalizado.
