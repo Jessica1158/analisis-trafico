@@ -1,0 +1,73 @@
+[+] Cargando archivo: adatqueDHCP.pcapng
+[+] Paquetes analizados: 1526
+
+
+================ RESUMEN GENERAL ================
+
+Archivo: adatqueDHCP.pcapng
+Total de paquetes: 1526
+Ventana temporal: 2025-10-01 14:48:40.177772  ->  2025-10-01 14:49:05.082340
+
+--- Protocolos ---
+UDP: 1256
+non-ip: 267
+
+--- Top IP Origen ---
+0.0.0.0: 1001
+192.168.1.1: 249
+fe80::e93e:7cd9:f425:5f0a: 6
+192.168.1.13: 2
+192.168.1.12: 1
+
+--- Top IP Destino ---
+255.255.255.255: 1003
+ff02::16: 3
+ff02::1:3: 2
+192.168.1.38: 1
+192.168.1.39: 1
+192.168.1.40: 1
+192.168.1.41: 1
+192.168.1.43: 1
+192.168.1.42: 1
+192.168.1.44: 1
+
+================= HALLAZGOS =================
+
+
+--- SYN_FLOOD ---
+No se detectaron eventos.
+
+--- DDOS_DISTRIBUTED ---
+No se detectaron eventos.
+
+--- PORT_SCANS ---
+No se detectaron eventos.
+
+--- UNUSUAL_PORTS ---
+No se detectaron eventos.
+
+--- SUSPICIOUS_DNS ---
+No se detectaron eventos.
+
+--- HIGH_RST ---
+No se detectaron eventos.
+
+--- ICMP_UNREACHABLE ---
+No se detectaron eventos.
+
+--- DHCP_STARVATION ---
+{'src': '0.0.0.0', 'discover': 1000, 'unique_macs': 1001}
+
+================= CONCLUSIÓN AUTOMÁTICA =================
+
+NO se detectó ataque DDoS distribuido.
+
+ NO se detectó SYN Flood.
+
+ ATAQUE DHCP STARVATION DETECTADO
+   Origen: 0.0.0.0
+   DHCP DISCOVER: 1000
+   MACs falsas: 1001
+
+
+[+] Análisis completo.
